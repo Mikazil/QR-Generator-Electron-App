@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+:root {
+  font-family: 'PT Mono';
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: #242424;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center ;
+}
+
+.nameh1 {
+  text-align: center;
+  margin: 4vw;
+  border: solid;
+  border-width: 3px;
+  padding: 5vw;
+  border-radius: 4vw;
+  border-color: #d6ba00;
+  color: white;
+}
+
+.input-group {
+  width: 90vw;
+  
+}
+
+.input {
+  width: 90vw;
+  height: 44px;
+  background-color: #00000017;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  -webkit-transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+  transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.label {
+  width: 90vw;
+  max-width: 90vw;
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  font-weight: bold;
+  -webkit-transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+  transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'PT Mono';
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: #d6ba00;
+}
+
+.input-group:hover .label,
+.input:focus {
+  color: white;
+}
+
+.qrcode{
+  margin-top: 10vh;
+  border-radius: 1vw;
+}
+
+.input[type="text"]{
+  font-family: 'PT Mono';
+}
